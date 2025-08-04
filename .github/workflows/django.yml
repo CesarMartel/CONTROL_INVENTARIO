@@ -3,7 +3,7 @@ name: Django CI
 
 on:
   push:
-    branches: [main, develop, Proyect-web]
+    branches: [main, develop, proyect-web]
   pull_request:
     branches: [main, develop, Proyect-web]
 
