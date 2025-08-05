@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gestor de Inventario</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Stalinist+One&display=swap" rel="stylesheet">
+
   <!-- Cargar los archivos estáticos -->
   {% load static %}
 
@@ -21,7 +25,7 @@
   <!-- Barra de Navegación -->
   <header>
     <div class="container">
-      <h1>Gestor de Inventario</h1>
+      <h1 id="animated-text" class="limelight-regular">GESTOR DE INVENTARIO</h1>
     </div>
   </header>
 
@@ -35,10 +39,11 @@
 
 
       <!-- Selector de Categoría -->
-      <select id="categoryDropdown" onchange="filterByCategory(this.value)" style="padding: 12px 25px; border-radius: 15px; border: 2px solid #00796b; font-size: 1.1rem; font-weight: 700; color: #00796b; margin-right: 20px;">
+      <select id="categoryDropdown" onchange="filterByCategory(this.value)"
+        style="padding: 12px 25px; border-radius: 15px; border: 2px solid #00796b; font-size: 1.1rem; font-weight: 700; color: #00796b; margin-right: 20px;">
         <option value="" selected>Ver todas las categorías</option>
         {% for categoria in categorias %}
-          <option value="{{ categoria.nombre_categoria }}">{{ categoria.nombre_categoria }}</option>
+        <option value="{{ categoria.nombre_categoria }}">{{ categoria.nombre_categoria }}</option>
         {% endfor %}
       </select>
 
@@ -65,10 +70,11 @@
         <input type="text" id="productCode" required>
 
         <label for="productCategory">Categoría:</label>
-        <select id="productCategory" required style="width: 100%; padding: 14px 16px; margin-bottom: 20px; border-radius: 15px; border: 1.8px solid #ccc; font-size: 1rem; transition: border-color 0.3s ease;">
+        <select id="productCategory" required
+          style="width: 100%; padding: 14px 16px; margin-bottom: 20px; border-radius: 15px; border: 1.8px solid #ccc; font-size: 1rem; transition: border-color 0.3s ease;">
           <option value="" disabled selected>Selecciona una categoría</option>
           {% for categoria in categorias %}
-            <option value="{{ categoria.nombre_categoria }}">{{ categoria.nombre_categoria }}</option>
+          <option value="{{ categoria.nombre_categoria }}">{{ categoria.nombre_categoria }}</option>
           {% endfor %}
         </select>
 

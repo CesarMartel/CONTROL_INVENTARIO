@@ -305,3 +305,38 @@ window.addEventListener('DOMContentLoaded', function () {
     filterByCategory(firstCategory);
   }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const textElement = document.getElementById('animated-text');
+  const fullText = 'GESTOR-DE-INVENTARIO'; // Texto final
+  textElement.innerText = ''; // Limpiar el contenido inicial
+
+  let i = 0;
+  const typingSpeed = 100; // Velocidad de escritura (en milisegundos)
+  const randomLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'; // Letras y caracteres aleatorios
+
+  function getRandomChar() {
+    return randomLetters.charAt(Math.floor(Math.random() * randomLetters.length));
+  }
+
+  function typeText() {
+    if (i < fullText.length) {
+      // Mientras el texto se escribe, poner letras aleatorias
+      textElement.innerText += getRandomChar();
+      
+      // Simulamos el tiempo para que el texto cambie aleatoriamente
+      setTimeout(() => {
+        // Una vez que se ha escrito aleatoriamente, colocar la letra correcta
+        textElement.innerText = textElement.innerText.slice(0, -1) + fullText.charAt(i);
+        i++;
+      }, typingSpeed);
+
+      setTimeout(typeText, typingSpeed); // Llamar a la función recursiva
+    }
+  }
+
+  // Iniciar la animación de escritura
+  typeText(); 
+});
+
+
