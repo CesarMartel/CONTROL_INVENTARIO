@@ -1,3 +1,4 @@
+#wsgi
 """
 WSGI config for GroupProyect project.
 

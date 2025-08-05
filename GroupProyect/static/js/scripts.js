@@ -1,3 +1,4 @@
+//js
 // Variables globales
 let products = [];
 let currentCategory = '';
