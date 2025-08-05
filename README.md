@@ -1,40 +1,29 @@
-🛒 Proyecto Mini CRUD: Inventario de Productos
+🛒 PROYECTO INVENTARIO DE PRODUCTOS
+
 📌 Descripción del Proyecto
-Este proyecto es una aplicación web de inventario de productos desarrollada con 
-
-Django que permite a los usuarios gestionar un catálogo de productos a través de operaciones CRUD (Crear, Leer, Actualizar, Borrar). El objetivo principal del proyecto fue aplicar las metodologías ágiles 
-
-
-
-Scrum y Extreme Programming (XP), utilizando GitHub para la colaboración y configurando la Integración Continua (CI) con GitHub Actions.
-
+Este proyecto es una aplicación web de inventario de productos desarrollada con Django que permite a los usuarios gestionar un catálogo de productos a través de operaciones CRUD (Crear, Leer, Actualizar, Borrar). El objetivo principal del proyecto fue aplicar las metodologías ágiles Scrum y Extreme Programming (XP), utilizando GitHub para la colaboración y configurando la Integración Continua (CI) con GitHub Actions.
 
 El sistema busca brindar una interfaz intuitiva y eficiente que facilite la administración y visualización de productos.
 
-🔧 Funcionalidades Principales
+🔧 FUNCIONALIDADES PRINCIPALES:
 
-Registro de Productos: Los usuarios pueden agregar nuevos productos, especificando el nombre, la categoría, el precio y el stock.
+-Registro de Productos: Los usuarios pueden agregar nuevos productos, especificando el nombre, la categoría, el precio y el stock.
 
+-Visualización de Productos: Los productos registrados se muestran en una tabla dinámica para su fácil consulta.
 
+-Actualización de Productos: Los usuarios pueden editar la información de productos existentes.
 
-Visualización de Productos: Los productos registrados se muestran en una tabla dinámica para su fácil consulta.
-
-
-Actualización de Productos: Los usuarios pueden editar la información de productos existentes.
-
-
-Eliminación de Productos: El sistema permite borrar productos del inventario.
+-Eliminación de Productos: El sistema permite borrar productos del inventario.
 
 👥 Integrantes y Roles del Equipo
-Rol	Nombre
-Scrum Master	
-César Martel 
 
-Developer Backend	
-Miguel Ruiz y Sebastian Rosas 
-
-Developer Frontend	
-Yhefritd Huacho y Fernando Dionicio 
+| Rol                 | Nombre            |
+| ------------------- | ------------------|
+| Scrum Master        | Cesar Martel      |
+| Developer Back-end  | Sebastian Rosas   |
+| Developer Front-end | Yhefritd Huacho   |
+| Developer Front-end | Fernando Dionicio |
+| Developer Back-end  | Miguel Ruiz       |
 
 ✅ Historias de Usuario Principales
 
@@ -57,36 +46,39 @@ Django 4.x
 Git
 
 Pasos de Instalación
-Clona el repositorio:
+### Pasos de Instalación:
 
-Bash
+1. **Clona el repositorio:**
 
-git clone https://github.com/CesarMartel/CONTROL_INVENTARIO.git
-cd CONTROL_INVENTARIO
-Crea y activa un entorno virtual:
+   ```bash
+   git clone https://github.com/CesarMartel/CONTROL_INVENTARIO
+   ```
 
-Bash
+2. **Crea y activa un entorno virtual:**
 
-python -m venv .env
-# En Linux/Mac
-source .env/bin/activate
-# En Windows
-.env\Scripts\activate
-Instala las dependencias:
+   ```bash
+   python -m venv .env
+   source .env/bin/activate    # En Linux/Mac
+   .env\Scripts\activate       # En Windows
+   ```
 
-Bash
+3. **Instala las dependencias:**
 
-pip install -r requirements.txt
-Aplica las migraciones de la base de datos:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Bash
+4. **Aplica las migraciones:**
 
-python manage.py migrate
-Ejecuta el servidor de desarrollo:
+   ```bash
+   python manage.py migrate
+   ```
 
-Bash
+5. **Ejecuta el servidor:**
 
-python manage.py runserver
+   ```bash
+   python manage.py runserver
+   ```
 🗂️ Estructura del Tablero Trello
 El equipo utiliza 
 
