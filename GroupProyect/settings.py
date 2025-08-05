@@ -1,3 +1,4 @@
+#settings
 """
 Django settings for GroupProyect project.
 
