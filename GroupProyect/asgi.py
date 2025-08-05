@@ -1,3 +1,4 @@
+#asgi
 """
 ASGI config for GroupProyect project.
 
