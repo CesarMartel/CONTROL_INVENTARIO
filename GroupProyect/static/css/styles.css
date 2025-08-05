@@ -21,7 +21,7 @@ body {
    BARRA DE NAVEGACIÓN
 =========================== */
 header {
-  background: linear-gradient(90deg, #00695c, #004d40);
+  background: linear-gradient(90deg, #3613d1, #9da534);
   color: white;
   padding: 50px 0;
   text-align: center;
@@ -66,14 +66,14 @@ header h1 {
 }
 
 #search:focus {
-  border-color: #00796b;
+  border-color: #0781d3;
   outline: none;
   box-shadow: 0 0 8px rgba(0, 121, 107, 0.4);
 }
 
 /* Botones generales */
 button {
-  background: #00796b;
+  background: #0a07cc;
   color: white;
   border: none;
   padding: 12px 28px;
