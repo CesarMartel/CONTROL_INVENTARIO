@@ -1,4 +1,3 @@
-#models
 from django.db import models
 
 
@@ -21,9 +20,9 @@ class Proveedor(models.Model):
     nombre_proveedor = models.CharField(max_length=100)
     telefono_proveedor = models.CharField(max_length=9)
     direccion = models.TextField()
-    producto = models.ForeignKey(Producto, on_delete=models.CASCADE)
+    producto = models.ManyToManyField(Producto)
     def __str__(self):
-        return self.nombre_proveedor + ' - ' + self.producto.nombre_producto
+        return self.nombre_proveedor
 
 class Cliente(models.Model):
     nombre_cliente = models.CharField(max_length=100)
