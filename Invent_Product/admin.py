@@ -1,3 +1,4 @@
+#admin
 from django.contrib import admin
 from .models import Categoria, Producto, Proveedor, Cliente, Venta
 # Register your models here.
