@@ -86,6 +86,8 @@ Trello para organizar el flujo de trabajo de acuerdo con la metodología Scrum +
 
 🔗 Accesos Directos
 Tablero Trello: 👉🔗 [https://trello.com/invite/b/689101684d151b9cd01d7b26/ATTI2b9c5650f823ab949fb68f231a90528dF092CE8E/controlinventario]
+<img width="1662" height="815" alt="image" src="https://github.com/user-attachments/assets/15a87102-eea9-475a-969b-99b405d16fc4" />
+
 
 Repositorio GitHub: 👉🔗 [https://github.com/CesarMartel/CONTROL_INVENTARIO.git]
 
