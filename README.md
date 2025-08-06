@@ -79,12 +79,16 @@ Pasos de Instalación
    ```bash
    python manage.py runserver
    ```
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 VISUALIZACIÓN FINAL DEL PROYECTO:
-<img width="1920" height="950" alt="image" src="https://github.com/user-attachments/assets/8d1b516f-ca9f-4974-b2f2-ca2ccf3de902" />
+<img width="1866" height="925" alt="image" src="https://github.com/user-attachments/assets/8c0fbf72-8014-45f1-93c0-cc1ec9a24b30" />
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 FUNCIONALIDADES:
 <img width="1913" height="965" alt="image" src="https://github.com/user-attachments/assets/15e35cb6-ae82-45ed-ba75-07b3317a1b0f" />
-<img width="1913" height="965" alt="image" src="https://github.com/user-attachments/assets/108b60a6-2eb4-4138-917c-d6289e13b221" />
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 PANEL ADMIN:
 <img width="788" height="633" alt="image" src="https://github.com/user-attachments/assets/c170a0e5-27da-4aa8-849c-9ccf3c63dea9" />
 
