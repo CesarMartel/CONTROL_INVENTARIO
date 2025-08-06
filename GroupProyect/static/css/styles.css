@@ -21,19 +21,68 @@ body {
    BARRA DE NAVEGACIÓN
 =========================== */
 header {
-  background: linear-gradient(90deg, #3613d1, #9da534);
-  color: white;
+  background: linear-gradient(135deg, #6a1b9a, #2196f3); /* Degradado inicial */
+  color: black;
   padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: background 1s ease-in-out; /* Transición suave */
 }
 
 header h1 {
   margin: 0;
-  font-size: 3.2rem;
-  font-weight: 700;
+  font-size: 5rem;
+  font-weight: 900;
   letter-spacing: 1px;
 }
+
+.limelight-regular {
+  font-family: "Limelight", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+
+#animated-text {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 3rem;
+  font-weight: 900;
+  color: transparent;
+  background-clip: text;
+  text-shadow: 5px 0px 6px rgb(255, 255, 255); /* Sombra estática */
+}
+
+#animated-text:hover {
+  text-shadow: none; /* Eliminar la sombra al pasar el mouse */
+  color: white;
+}
+
+@keyframes glitchEffect {
+  0% {
+    transform: translate(0, 0) skew(0deg);
+  }
+  20% {
+    transform: translate(-5px, -5px) skew(-5deg);
+  }
+  40% {
+    transform: translate(5px, 5px) skew(5deg);
+  }
+  60% {
+    transform: translate(-5px, 5px) skew(5deg);
+  }
+  80% {
+    transform: translate(5px, -5px) skew(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) skew(0deg);
+  }
+}
+
 
 /* ===========================
    SECCIÓN DE BÚSQUEDA Y FILTRO
@@ -66,14 +115,14 @@ header h1 {
 }
 
 #search:focus {
-  border-color: #0781d3;
+  border-color:linear-gradient(135deg, #6a1b9a, #2196f3);
   outline: none;
-  box-shadow: 0 0 8px rgba(0, 121, 107, 0.4);
+  box-shadow: 0 0 8px #2196f3;
 }
 
 /* Botones generales */
 button {
-  background: #0a07cc;
+  background: linear-gradient(135deg, #6a1b9a, #2196f3);
   color: white;
   border: none;
   padding: 12px 28px;
@@ -86,7 +135,7 @@ button {
 }
 
 button:hover {
-  background: #004d40;
+  background: linear-gradient(135deg, #6a1b9a, #2196f3);
   transform: scale(1.05);
 }
 
@@ -127,7 +176,7 @@ button:hover {
 }
 
 .category-text:hover {
-  background: #00796b;
+  background: linear-gradient(135deg, #6a1b9a, #2196f3);;
   color: white;
 }
 
@@ -172,7 +221,7 @@ button:hover {
 #productSection h2 {
   font-size: 1.8rem;
   margin-bottom: 30px;
-  color: #004d40;
+  color: linear-gradient(135deg, #6a1b9a, #2196f3);
   font-weight: 700;
 }
 
@@ -327,7 +376,7 @@ button:hover {
 }
 
 .modal-content button {
-  background: #00796b;
+  background: linear-gradient(135deg, #6a1b9a, #2196f3);
   color: white;
   padding: 14px 30px;
   font-size: 1.1rem;
@@ -340,14 +389,14 @@ button:hover {
 }
 
 .modal-content button:hover {
-  background: #004d40;
+  background: linear-gradient(135deg, #6a1b9a, #2196f3);;
 }
 
 .modal-content button[type="button"] {
-  background: #ccc;
-  color: #333;
+  background: linear-gradient(135deg, #d32f2f, #9a0007);
+  color: #ffffff;
 }
 
 .modal-content button[type="button"]:hover {
-  background: #999;
+  background: linear-gradient(135deg, #d32f2f, #9a0007);
 }
